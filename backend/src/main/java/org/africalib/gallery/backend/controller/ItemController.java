@@ -31,7 +31,6 @@ public class ItemController {
     @GetMapping("/api/items")
     public List<Item> getItems() throws  Exception{
         List<Item> items = itemRepository.findAll();
-
         return items;
     }
 
